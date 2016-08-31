@@ -63,29 +63,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78f-Is-Pec">
-                                <rect key="frame" x="102" y="380" width="396" height="177"/>
+                                <rect key="frame" x="139" y="382" width="323" height="144"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="396" id="OKn-tl-5FB"/>
-                                    <constraint firstAttribute="height" constant="177" id="jFB-bq-CJU"/>
+                                    <constraint firstAttribute="height" constant="144" id="hBN-kI-0kg"/>
+                                    <constraint firstAttribute="width" constant="323" id="m3o-bb-TCM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="78f-Is-Pec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3AG-0k-h6X"/>
                             <constraint firstItem="Wv9-Me-Bop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6u4-ie-6pW"/>
-                            <constraint firstItem="78f-Is-Pec" firstAttribute="top" secondItem="Wv9-Me-Bop" secondAttribute="bottom" constant="21" id="898-PQ-fDR"/>
-                            <constraint firstItem="78f-Is-Pec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvS-iv-iLF"/>
                             <constraint firstItem="tsU-TE-ijV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ipc-lT-nQR"/>
                             <constraint firstItem="mCe-C0-Spa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLw-0I-lJ0"/>
                             <constraint firstItem="Wv9-Me-Bop" firstAttribute="top" secondItem="mCe-C0-Spa" secondAttribute="bottom" constant="37" id="N4r-8Z-OPt"/>
                             <constraint firstItem="tsU-TE-ijV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="Pkv-G7-3vr"/>
                             <constraint firstItem="txW-kB-8hp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QvB-oo-dMz"/>
                             <constraint firstItem="txW-kB-8hp" firstAttribute="top" secondItem="tsU-TE-ijV" secondAttribute="bottom" constant="8" id="SwZ-ay-Vf5"/>
-                            <constraint firstItem="78f-Is-Pec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XQ8-mX-tHR"/>
                             <constraint firstItem="mCe-C0-Spa" firstAttribute="top" secondItem="txW-kB-8hp" secondAttribute="bottom" constant="48" id="ZgS-uf-ey1"/>
+                            <constraint firstItem="78f-Is-Pec" firstAttribute="top" secondItem="Wv9-Me-Bop" secondAttribute="bottom" constant="23" id="bAe-QX-UJ5"/>
                         </constraints>
                     </view>
                     <connections>
