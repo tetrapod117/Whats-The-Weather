@@ -12,7 +12,7 @@
 		3C668F6C1D75E6910010B303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C668F6A1D75E6910010B303 /* Main.storyboard */; };
 		3C668F6E1D75E6910010B303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C668F6D1D75E6910010B303 /* Assets.xcassets */; };
 		3C668F711D75E6910010B303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C668F6F1D75E6910010B303 /* LaunchScreen.storyboard */; };
-		3CA5E2D11D75E86C00A26E94 /* backgraund.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA5E2D01D75E86C00A26E94 /* backgraund.jpg */; };
+		3CA5E2D31D77BEE400A26E94 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CA5E2D21D77BEE400A26E94 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		3C668F6D1D75E6910010B303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C668F701D75E6910010B303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C668F721D75E6910010B303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CA5E2D01D75E86C00A26E94 /* backgraund.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgraund.jpg; sourceTree = "<group>"; };
+		3CA5E2D21D77BEE400A26E94 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				3C668F661D75E6910010B303 /* AppDelegate.swift */,
 				3C668F681D75E6910010B303 /* ViewController.swift */,
 				3C668F6A1D75E6910010B303 /* Main.storyboard */,
-				3CA5E2D01D75E86C00A26E94 /* backgraund.jpg */,
+				3CA5E2D21D77BEE400A26E94 /* background.png */,
 				3C668F6D1D75E6910010B303 /* Assets.xcassets */,
 				3C668F6F1D75E6910010B303 /* LaunchScreen.storyboard */,
 				3C668F721D75E6910010B303 /* Info.plist */,
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					3C668F621D75E6910010B303 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZM6MZ66QHY;
 					};
 				};
 			};
@@ -126,9 +127,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C668F711D75E6910010B303 /* LaunchScreen.storyboard in Resources */,
+				3CA5E2D31D77BEE400A26E94 /* background.png in Resources */,
 				3C668F6E1D75E6910010B303 /* Assets.xcassets in Resources */,
 				3C668F6C1D75E6910010B303 /* Main.storyboard in Resources */,
-				3CA5E2D11D75E86C00A26E94 /* backgraund.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +254,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Whats The Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.myapp.Whats-The-Weather";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.Whats-The-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Whats The Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.myapp.Whats-The-Weather";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.Whats-The-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

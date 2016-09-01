@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,11 +14,11 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="top" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgraund.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-Pe-z97">
+                            <imageView contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-Pe-z97">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats The Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsU-TE-ijV">
@@ -27,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="76" id="KXj-OX-G7a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都市を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txW-kB-8hp">
@@ -37,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="222" id="hMu-MO-lF7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Tokyo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-C0-Spa">
@@ -55,28 +56,28 @@
                                     <constraint firstAttribute="width" constant="84" id="Jgw-N4-rIt"/>
                                     <constraint firstAttribute="height" constant="45" id="gMQ-h1-aqF"/>
                                 </constraints>
-                                <state key="normal" title="決定">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="決定"/>
                                 <connections>
                                     <action selector="findWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uny-BQ-mvz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78f-Is-Pec">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78f-Is-Pec">
                                 <rect key="frame" x="139" y="382" width="323" height="144"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="hBN-kI-0kg"/>
                                     <constraint firstAttribute="width" constant="323" id="m3o-bb-TCM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="78f-Is-Pec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3AG-0k-h6X"/>
+                            <constraint firstItem="6y8-Pe-z97" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="5pW-ou-hF4"/>
                             <constraint firstItem="Wv9-Me-Bop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6u4-ie-6pW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6y8-Pe-z97" secondAttribute="bottom" id="74E-dw-Ud2"/>
                             <constraint firstItem="tsU-TE-ijV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ipc-lT-nQR"/>
                             <constraint firstItem="mCe-C0-Spa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLw-0I-lJ0"/>
                             <constraint firstItem="Wv9-Me-Bop" firstAttribute="top" secondItem="mCe-C0-Spa" secondAttribute="bottom" constant="37" id="N4r-8Z-OPt"/>
@@ -85,6 +86,8 @@
                             <constraint firstItem="txW-kB-8hp" firstAttribute="top" secondItem="tsU-TE-ijV" secondAttribute="bottom" constant="8" id="SwZ-ay-Vf5"/>
                             <constraint firstItem="mCe-C0-Spa" firstAttribute="top" secondItem="txW-kB-8hp" secondAttribute="bottom" constant="48" id="ZgS-uf-ey1"/>
                             <constraint firstItem="78f-Is-Pec" firstAttribute="top" secondItem="Wv9-Me-Bop" secondAttribute="bottom" constant="23" id="bAe-QX-UJ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6y8-Pe-z97" secondAttribute="trailing" constant="-20" id="dno-hj-E97"/>
+                            <constraint firstItem="6y8-Pe-z97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iub-Z9-VM4"/>
                         </constraints>
                     </view>
                     <connections>
@@ -98,6 +101,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backgraund.jpg" width="1000" height="667"/>
+        <image name="background.png" width="1280" height="853"/>
     </resources>
 </document>
